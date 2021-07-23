@@ -1,6 +1,7 @@
 class DrumKit {
   constructor() {
     this.pads = document.querySelectorAll(".pad");
+    this.playBtn = document.querySelector(".play");
     this.kickAudio = document.querySelector(".kick-sound");
     this.snareAudio = document.querySelector(".snare-sound");
     this.hiharAudio = document.querySelector(".hihat-sound");
@@ -18,10 +19,13 @@ class DrumKit {
     const interval = (60 / this.bpm) * 1000;
     setInterval(() => {
       this.repeat();
-    }, 1000);
+    }, interval);
   }
 }
+// Constructor ENDS
 
 const drumKit = new DrumKit();
 
-drumKit.start();
+drumKit.playBtn.addEventListener("click", () => {
+  drumKit.start();
+});
