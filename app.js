@@ -4,7 +4,7 @@ class DrumKit {
     this.playBtn = document.querySelector(".play");
     this.kickAudio = document.querySelector(".kick-sound");
     this.snareAudio = document.querySelector(".snare-sound");
-    this.hiharAudio = document.querySelector(".hihat-sound");
+    this.hihatAudio = document.querySelector(".hihat-sound");
     this.bpm = 150;
     // TRACKER
     this.index = 0;
@@ -26,6 +26,6 @@ class DrumKit {
 
 const drumKit = new DrumKit();
 
-drumKit.playBtn.addEventListener("click", () => {
+drumKit.playBtn.addEventListener("click", function () {
   drumKit.start();
 });
