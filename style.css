@@ -53,19 +53,19 @@ h2 {
   border: 0.5px solid white;
   background: rgb(160, 211, 224);
 }
-.kick-pad.active {
-  background: rgb(59, 197, 231);
-}
 .snare-pad {
   border: 0.5px solid white;
   background: rgb(240, 160, 208);
 }
-.snare-pad.active {
-  background: rgb(218, 58, 178);
-}
 .hihat-pad {
   border: 0.5px solid white;
   background: rgb(224, 194, 160);
+}
+.snare-pad.active {
+  background: rgb(218, 58, 178);
+}
+.kick-pad.active {
+  background: rgb(53, 151, 231);
 }
 .hihat-pad.active {
   background: rgb(241, 158, 64);
@@ -126,4 +126,13 @@ select {
   font-size: 2rem;
   padding: 1rem;
   font-size: 1rem;
+}
+
+@keyframes playTrack {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
 }
