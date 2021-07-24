@@ -37,13 +37,14 @@ h2 {
   align-items: center;
   text-align: center;
   text-decoration: underline;
-  font-size: 7rem;
+  font-size: 4.5rem;
   color: white;
   padding-bottom: 4rem;
 }
 .kick-pad,
 .snare-pad,
-.hihat-pad {
+.hihat-pad,
+.clap-pad {
   width: 5rem;
   height: 5rem;
   margin: 1rem 0.5rem;
@@ -61,6 +62,10 @@ h2 {
   border: 0.5px solid white;
   background: rgb(224, 194, 160);
 }
+.clap-pad {
+  border: 0.5px solid white;
+  background: rgb(155, 72, 223);
+}
 .snare-pad.active {
   background: rgb(218, 58, 178);
 }
@@ -69,6 +74,9 @@ h2 {
 }
 .hihat-pad.active {
   background: rgb(241, 158, 64);
+}
+.clap-pad.active {
+  background: rgb(130, 34, 209);
 }
 .sequencer {
   display: flex;
@@ -79,7 +87,8 @@ h2 {
 }
 .hihat-track,
 .snare-track,
-.kick-track {
+.kick-track,
+.clap-track {
   display: flex;
   align-items: center;
   width: 70%;
@@ -87,7 +96,8 @@ h2 {
 }
 .kick,
 .snare,
-.hihat {
+.hihat,
+.clap {
   display: flex;
 }
 .controls {
@@ -123,9 +133,9 @@ h2 {
   border-radius: 2rem;
 }
 select {
-  font-size: 2rem;
+  font-size: 1.2rem;
   padding: 1rem;
-  font-size: 1rem;
+  width: 150px;
 }
 
 @keyframes playTrack {

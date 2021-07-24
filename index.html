@@ -16,7 +16,7 @@
         <h2>Beat Maker</h2>
         <div class="kick-track">
             <div class="controls">
-                <h1>Kick</h1>
+                <h1>Kick &nbsp;</h1>
                 <button data-track="0" class="mute kick-volume">
                     <i class="fas fa-volume-mute"></i>
                 </button>
@@ -71,8 +71,8 @@
                     <i class="fas fa-volume-mute"></i>
                 </button>
                 <select name="hihat-select" id="hihat-select">
-                    <option value="./allSounds/hihat_acoustic01.wav">Hihat Acoustic01</option>
-                    <option value="./allSounds/hihat-acoustic02.wav">Hihat Acousic02</option>
+                    <option value="./allSounds/hihat_acoustic01.wav">Hihat Acoustic</option>
+                    <option value="./allSounds/hihat-electro.wav">Hihat Electro</option>
                     <option value="./allSounds/hihat-808.wav">808 Hihat</option>
                     <option value="./allSounds/hihat-digital.wav">Hihat Digital</option>
                     <option value="./allSounds/hihat-analog.wav">Hihat Analog</option>
@@ -88,12 +88,38 @@
                 <div class="pad hihat-pad b7"></div>
             </div>
         </div>
+        <!--CLAP-->
+        <div class="clap-track">
+            <div class="controls">
+                <h1>Clap&nbsp;</h1>
+                <button data-track="3" class="mute clap-volume">
+                    <i class="fas fa-volume-mute"></i>
+                </button>
+                <select name="clap-select" id="clap-select">
+                    <option value="./allSounds/clap/808.wav">808 Clap</option>
+                    <option value="./allSounds/clap-analog.wav">Analog Clap</option>
+                    <option value="./allSounds/clap-tape.wav">Clap Tape</option>
+                    <option value="./allSounds/clap-fat.wav">Fat Clap</option>
+                    <option value="./allSounds/clap-slapper.wav">Clap Slapper</option>
+                </select>
+            </div>
+            <div class="clap">
+                <div class="pad clap-pad b1"></div>
+                <div class="pad clap-pad b2"></div>
+                <div class="pad clap-pad b3"></div>
+                <div class="pad clap-pad b4"></div>
+                <div class="pad clap-pad b5"></div>
+                <div class="pad clap-pad b6"></div>
+                <div class="pad clap-pad b7"></div>
+            </div>
+        </div>
         <button class="play">Play</button>
     </div>
 
     <audio class="kick-sound" src="./allSounds/kick-classic.wav"></audio>
     <audio class="snare-sound" src="./allSounds/snare-acoustic01.wav"></audio>
     <audio class="hihat-sound" src="./allSounds/hihat-acoustic01.wav"></audio>
+    <audio class="clap-sound" src="./allSounds/clap-analog.wav"></audio>
     <script src="./app.js"></script>
 </body>
 </html>
