@@ -39,7 +39,8 @@ h2 {
   text-decoration: underline;
   font-size: 4.5rem;
   color: white;
-  padding-bottom: 4rem;
+  padding-bottom: 3rem;
+  margin-top: 1rem;
 }
 .kick-pad,
 .snare-pad,
@@ -81,6 +82,7 @@ h2 {
 }
 .sequencer {
   display: flex;
+  flex-wrap: wrap;
   min-height: 100vh;
   flex-direction: column;
   align-items: center;
@@ -91,6 +93,7 @@ h2 {
 .kick-track,
 .clap-track {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   width: 70%;
   justify-content: space-between;
@@ -100,9 +103,11 @@ h2 {
 .hihat,
 .clap {
   display: flex;
+  flex-wrap: wrap;
 }
 .controls {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   flex: 1;
@@ -144,12 +149,59 @@ select {
 .mute.active {
   background: rgb(182, 182, 182);
 }
-
+.tempo {
+  margin: 3rem;
+  width: 30%;
+}
+.tempo-slider {
+  padding: 0.2rem;
+  -webkit-appearance: none;
+  margin: 1rem;
+  width: 100%;
+  position: relative;
+  background: rgb(88, 88, 88);
+  cursor: pointer;
+  border: 0.5px solid white;
+  border-radius: 1rem;
+}
+.tempo p {
+  font-size: 1.8rem;
+  margin: 1.5rem;
+  color: white;
+  text-align: center;
+}
 @keyframes playTrack {
   from {
     transform: scale(1);
   }
   to {
     transform: scale(1.2);
+  }
+}
+@media screen and (max-width: 754px) {
+  html {
+    font-size: 50%;
+  }
+  .sequencer {
+    display: flex;
+    flex: 1 1 40rem;
+    width: 100%;
+  }
+  .kick-track,
+  .snare-track,
+  .hihat-track,
+  .clap-track {
+    width: 90%;
+  }
+  .kick,
+  .snare,
+  .hihat,
+  .clap {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .controls {
+    justify-content: space-evenly;
+    margin: 2rem;
   }
 }
