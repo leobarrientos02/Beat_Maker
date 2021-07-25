@@ -186,6 +186,7 @@ select {
   }
   .sequencer {
     display: flex;
+    height: 100%;
     flex: 1 1 40rem;
     width: 100%;
   }
