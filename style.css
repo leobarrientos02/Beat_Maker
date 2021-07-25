@@ -181,6 +181,8 @@ select {
 @media screen and (max-width: 754px) {
   html {
     font-size: 50%;
+    height: 100%;
+    overflow: visible;
   }
   .sequencer {
     display: flex;
@@ -207,5 +209,6 @@ select {
   .tempo {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
 }
