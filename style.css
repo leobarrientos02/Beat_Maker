@@ -49,6 +49,7 @@ h2 {
   height: 5rem;
   margin: 1rem 0.5rem;
   cursor: pointer;
+  border-radius: 1rem;
 }
 .kick-pad {
   border: 0.5px solid white;
@@ -76,7 +77,7 @@ h2 {
   background: rgb(241, 158, 64);
 }
 .clap-pad.active {
-  background: rgb(130, 34, 209);
+  background: rgb(105, 20, 175);
 }
 .sequencer {
   display: flex;
@@ -130,12 +131,18 @@ h2 {
   border: 0.5px solid white;
   cursor: pointer;
   margin-top: 3rem;
-  border-radius: 2rem;
+  border-radius: 1rem;
 }
 select {
   font-size: 1.2rem;
   padding: 1rem;
   width: 150px;
+}
+.mute {
+  border-radius: 1rem;
+}
+.mute.active {
+  background: rgb(182, 182, 182);
 }
 
 @keyframes playTrack {
